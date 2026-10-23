@@ -1,1 +1,1 @@
-only for enterprise !!!
+only for business!!!
