@@ -1,0 +1,13 @@
+{
+  "name": "gemora-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=25"
+  }
+}

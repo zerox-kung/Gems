@@ -1,0 +1,7 @@
+node_modules/
+.next/
+data/*.sqlite
+data/*.sqlite-*
+certificates/*.pem
+.env
+.env.*

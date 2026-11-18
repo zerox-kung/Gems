@@ -1,0 +1,22 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      PORT: 3001
+      GEMORA_DB_PATH: /app/database/gemora.sqlite
+    ports:
+      - "3001:3001"
+    volumes:
+      - gemora-db:/app/database
+
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+
+volumes:
+  gemora-db:

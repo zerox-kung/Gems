@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Midnight Sapphire",
+    "type": "Sapphire",
+    "origin": "Sri Lanka",
+    "carat": "3.42 ct",
+    "price": "POA",
+    "image": "/images/midnight-sapphire.jpg",
+    "description": "A deep, velvety blue with an almost ink-like saturation. This unheated oval carries a quiet, exceptional glow.",
+    "colour": "Blue"
+  },
+  {
+    "id": 2,
+    "name": "Garden Emerald",
+    "type": "Emerald",
+    "origin": "Colombia",
+    "carat": "2.18 ct",
+    "price": "$8,400",
+    "image": "/images/garden-emerald.jpg",
+    "description": "A vivid green emerald with a lively garden of inclusions and a beautifully balanced rectangular cut.",
+    "colour": "Green"
+  },
+  {
+    "id": 3,
+    "name": "Rosecut Ruby",
+    "type": "Ruby",
+    "origin": "Mozambique",
+    "carat": "1.76 ct",
+    "price": "$5,900",
+    "image": "/images/rosecut-ruby.jpg",
+    "description": "A glowing raspberry-red ruby, rose-cut by hand to preserve its natural, softly luminous character.",
+    "colour": "Red"
+  },
+  {
+    "id": 4,
+    "name": "Golden Beryl",
+    "type": "Other",
+    "origin": "Brazil",
+    "carat": "5.06 ct",
+    "price": "$3,200",
+    "image": "/images/golden-beryl.jpg",
+    "description": "Warm champagne tones meet a bright, open cut in this generous golden beryl from Minas Gerais.",
+    "colour": "Yellow"
+  },
+  {
+    "id": 5,
+    "name": "Twilight Spinel",
+    "type": "Other",
+    "origin": "Vietnam",
+    "carat": "1.92 ct",
+    "price": "$4,750",
+    "image": "/images/twilight-spinel.jpg",
+    "description": "A rare violet-grey spinel with a moody shift in changing light and a crisp cushion cut.",
+    "colour": "Violet"
+  },
+  {
+    "id": 6,
+    "name": "Seafoam Tourmaline",
+    "type": "Other",
+    "origin": "Namibia",
+    "carat": "4.11 ct",
+    "price": "$6,100",
+    "image": "/images/seafoam-tourmaline.jpg",
+    "description": "A fresh seafoam tourmaline with extraordinary clarity and a soft, watery gradient of colour.",
+    "colour": "Green"
+  }
+]
