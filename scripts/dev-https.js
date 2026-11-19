@@ -63,7 +63,7 @@ server.on("upgrade", (request, socket, head) => {
   socket.pipe(upstream);
 });
 
-server.listen(443, "127.0.0.1", () => {
+server.listen(443, "0.0.0.0", () => {
   console.log("Gemora HTTPS: https://gemora.local");
 });
 

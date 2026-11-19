@@ -1,0 +1,7 @@
+.git
+.next
+node_modules
+certificates
+data/*.sqlite
+data/*.sqlite-*
+npm-debug.log

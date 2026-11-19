@@ -1,4 +1,18 @@
 services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - "443:443"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+      - ./certificates:/app/certificates:ro
+
   api:
     build:
       context: .
@@ -10,13 +24,6 @@ services:
       - "3001:3001"
     volumes:
       - gemora-db:/app/database
-
-  web:
-    image: nginx:1.27-alpine
-    ports:
-      - "8080:80"
-    volumes:
-      - ./:/usr/share/nginx/html:ro
 
 volumes:
   gemora-db:
