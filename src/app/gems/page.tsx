@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import gems from "../../../data/gems.json";
 
@@ -55,7 +56,16 @@ export default function GemsPage() {
           <h1>Stones with a point of view.</h1>
           <p>Explore natural gemstones selected for origin, character, and enduring beauty.</p>
         </div>
-        <span className="catalogGem" aria-hidden="true" />
+        <figure className="catalogHeroImage">
+          <Image
+            src="/images/rosecut-ruby.jpg"
+            alt="Red gemstone jewellery against a dark background"
+            fill
+            sizes="(max-width: 760px) 45vw, 30vw"
+            className="editorialImage"
+          />
+          <figcaption>Colour study · 03</figcaption>
+        </figure>
       </section>
       <section className="catalogToolbar">
         <label>
@@ -105,13 +115,21 @@ export default function GemsPage() {
         </div>
       </section>
       <section className="catalogResults">
+        <p className="imageDisclaimer">Collection photography is illustrative; gemstone details below are sample data.</p>
         <p className="resultCount" aria-live="polite">
           {sortedGems.length} {sortedGems.length === 1 ? "stone" : "stones"} in the archive
         </p>
         <div className="catalogGrid">
           {sortedGems.map((gem) => (
             <Link className="card reveal" href={`/gems/${gem.id}`} key={gem.id}>
-              <div className={`gemImage gem${gem.id}`} role="img" aria-label={gem.name}>
+              <div className="gemImage">
+                <Image
+                  src={gem.image}
+                  alt={`${gem.name} illustrative collection photograph`}
+                  fill
+                  sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 28vw"
+                  className="editorialImage"
+                />
                 <span>View stone ↗</span>
               </div>
               <div className="cardBody">

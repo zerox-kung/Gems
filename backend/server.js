@@ -1,24 +1,10 @@
 import { createServer } from "node:http";
 import path from "node:path";
-import { DatabaseSync } from "node:sqlite";
+import { openGemsDatabase } from "./database.js";
 
 const port = Number(process.env.PORT || 3001);
 const databasePath = process.env.GEMORA_DB_PATH || path.resolve("data/gemora.sqlite");
-const database = new DatabaseSync(databasePath);
-
-database.exec(`
-  CREATE TABLE IF NOT EXISTS gems (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    type TEXT NOT NULL,
-    origin TEXT NOT NULL,
-    carat TEXT NOT NULL,
-    price TEXT NOT NULL DEFAULT 'POA',
-    image TEXT NOT NULL,
-    description TEXT NOT NULL,
-    colour TEXT NOT NULL
-  )
-`);
+const database = openGemsDatabase(databasePath);
 
 function json(response, status, value) {
   response.writeHead(status, {

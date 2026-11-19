@@ -7,6 +7,7 @@ A learning project for a jewelry catalog built with Next.js and SQLite.
 - `src/app/` - Next.js pages and API routes
 - `data/gems.json` - Primary mock gemstone data
 - `data/gems.sql` - SQL seed script
+- `public/images/` - Local, illustrative collection photography
 - `backend/` - Standalone Node.js API prototype
 - `scripts/dev-https.js` - Local HTTPS reverse proxy
 - `certificates/` - Local development certificates
@@ -37,6 +38,10 @@ npm run dev:secure
 
 The SQLite database is stored in the `gemora-db` Docker volume. The API seeds the mock gemstone records when it starts.
 The HTTPS certificate in `certificates/` is for local development only and is mounted into the web container. Make sure `gemora.local` resolves to `127.0.0.1` in the Windows hosts file and the certificate is trusted by the browser.
+
+## Sample product information
+
+The gemstone catalogue is mock data for learning purposes. Cut, clarity, dimensions, treatments, and report references are examples only; they are not appraisals or independent grading reports. Collection photography is illustrative and stored locally in `public/images/`.
 
 ## Development requirements
 

@@ -7,8 +7,14 @@
     "carat": "3.42 ct",
     "price": "POA",
     "image": "/images/midnight-sapphire.jpg",
-    "description": "A deep, velvety blue with an almost ink-like saturation. This unheated oval carries a quiet, exceptional glow.",
-    "colour": "Blue"
+    "description": "A deep blue oval with a dark, even tone and a bright return of light along its crown.",
+    "colour": "Blue",
+    "cut": "Oval mixed cut",
+    "clarity": "Eye-clean (sample)",
+    "dimensions": "9.2 × 7.1 × 4.8 mm",
+    "treatment": "No heat indicated in sample data",
+    "sampleId": "DEMO-GEM-001",
+    "reportNote": "Training data only; not an independent grading report."
   },
   {
     "id": 2,
@@ -18,8 +24,14 @@
     "carat": "2.18 ct",
     "price": "$8,400",
     "image": "/images/garden-emerald.jpg",
-    "description": "A vivid green emerald with a lively garden of inclusions and a beautifully balanced rectangular cut.",
-    "colour": "Green"
+    "description": "A vivid green emerald with visible inclusions and a balanced rectangular outline.",
+    "colour": "Green",
+    "cut": "Rectangular step cut",
+    "clarity": "Moderate jardin (sample)",
+    "dimensions": "8.1 × 6.4 × 4.3 mm",
+    "treatment": "Oiling noted in sample data",
+    "sampleId": "DEMO-GEM-002",
+    "reportNote": "Training data only; not an independent grading report."
   },
   {
     "id": 3,
@@ -29,8 +41,14 @@
     "carat": "1.76 ct",
     "price": "$5,900",
     "image": "/images/rosecut-ruby.jpg",
-    "description": "A glowing raspberry-red ruby, rose-cut by hand to preserve its natural, softly luminous character.",
-    "colour": "Red"
+    "description": "A raspberry-red ruby in a rose cut, with a low profile and a softer play of light.",
+    "colour": "Red",
+    "cut": "Rose cut",
+    "clarity": "Visible inclusions (sample)",
+    "dimensions": "7.2 × 6.1 × 3.8 mm",
+    "treatment": "No treatment recorded in sample data",
+    "sampleId": "DEMO-GEM-003",
+    "reportNote": "Training data only; not an independent grading report."
   },
   {
     "id": 4,
@@ -40,8 +58,14 @@
     "carat": "5.06 ct",
     "price": "$3,200",
     "image": "/images/golden-beryl.jpg",
-    "description": "Warm champagne tones meet a bright, open cut in this generous golden beryl from Minas Gerais.",
-    "colour": "Yellow"
+    "description": "A warm yellow beryl with an open step cut and a broad face-up view.",
+    "colour": "Yellow",
+    "cut": "Step cut",
+    "clarity": "Eye-clean (sample)",
+    "dimensions": "12.4 × 9.2 × 6.1 mm",
+    "treatment": "No treatment recorded in sample data",
+    "sampleId": "DEMO-GEM-004",
+    "reportNote": "Training data only; not an independent grading report."
   },
   {
     "id": 5,
@@ -51,8 +75,14 @@
     "carat": "1.92 ct",
     "price": "$4,750",
     "image": "/images/twilight-spinel.jpg",
-    "description": "A rare violet-grey spinel with a moody shift in changing light and a crisp cushion cut.",
-    "colour": "Violet"
+    "description": "A violet-grey spinel with a crisp cushion outline and a subtle shift in changing light.",
+    "colour": "Violet",
+    "cut": "Cushion mixed cut",
+    "clarity": "Eye-clean (sample)",
+    "dimensions": "7.8 × 6.9 × 4.6 mm",
+    "treatment": "No treatment recorded in sample data",
+    "sampleId": "DEMO-GEM-005",
+    "reportNote": "Training data only; not an independent grading report."
   },
   {
     "id": 6,
@@ -62,7 +92,13 @@
     "carat": "4.11 ct",
     "price": "$6,100",
     "image": "/images/seafoam-tourmaline.jpg",
-    "description": "A fresh seafoam tourmaline with extraordinary clarity and a soft, watery gradient of colour.",
-    "colour": "Green"
+    "description": "A seafoam-green tourmaline with a soft transition from pale mint to deeper green.",
+    "colour": "Green",
+    "cut": "Cushion brilliant cut",
+    "clarity": "Eye-clean (sample)",
+    "dimensions": "10.1 × 8.2 × 5.3 mm",
+    "treatment": "No heat indicated in sample data",
+    "sampleId": "DEMO-GEM-006",
+    "reportNote": "Training data only; not an independent grading report."
   }
 ]

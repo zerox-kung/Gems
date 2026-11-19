@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import gems from "../../data/gems.json";
 
@@ -6,23 +7,31 @@ export default function Home() {
     <main>
       <section className="hero" id="top">
         <div className="heroContent reveal">
-          <p className="eyebrow">The natural archive · Est. 1998</p>
-          <h1>Find the <em>extraordinary</em> in every stone.</h1>
-          <p className="heroCopy">A considered collection of rare gemstones, selected for their character, colour, and the stories held within them.</p>
-          <Link className="button" href="/gems">Explore the collection <span>↗</span></Link>
+          <p className="eyebrow">Gemora · A small gemstone archive</p>
+          <h1>For the stones you <em>remember.</em></h1>
+          <p className="heroCopy">Colour, cut, origin, and the details that make a stone itself. Start with six pieces in our first collection.</p>
+          <Link className="button" href="/gems">Browse the collection <span>↗</span></Link>
         </div>
-        <aside className="heroAside reveal delayOne">
-          <span className="goldLine" />
-          <p>“A gem is not merely found.<br />It is recognised.”</p>
-          <small>— The Gemora philosophy</small>
-        </aside>
+        <figure className="heroFigure reveal delayOne">
+          <div className="heroImageFrame">
+            <Image
+              src="/images/seafoam-tourmaline.jpg"
+              alt="Blue gemstones set in jewellery on a green leaf"
+              fill
+              priority
+              sizes="(max-width: 760px) 100vw, 48vw"
+              className="editorialImage"
+            />
+          </div>
+          <figcaption><span>Collection study</span><span>01 / 06</span></figcaption>
+        </figure>
       </section>
 
       <section className="introStrip">
         {[
-          ["01", "Curated with intent", "Each stone is hand-selected for its natural personality."],
-          ["02", "Origin matters", "Traceable sourcing and trusted partners, always."],
-          ["03", "Made to last", "Independent certification and expert guidance included."],
+          ["01", "Six stones to start", "A compact collection exploring colour and cut."],
+          ["02", "Details that matter", "Weight, dimensions and treatment notes in one place."],
+          ["03", "Room to ask", "Use the enquiry form to ask about a particular stone."],
         ].map(([number, title, copy]) => (
           <article key={number} className="feature">
             <strong>{number}</strong>
@@ -32,12 +41,21 @@ export default function Home() {
       </section>
 
       <section className="story" id="story">
-        <div className="storyVisual reveal" aria-hidden="true"><span>Since 1998</span></div>
+        <figure className="storyVisual reveal">
+          <Image
+            src="/images/midnight-sapphire.jpg"
+            alt="Gold jewellery arranged on pale stones in natural light"
+            fill
+            sizes="(max-width: 760px) 100vw, 45vw"
+            className="editorialImage"
+          />
+          <figcaption>Light, texture, and a closer look</figcaption>
+        </figure>
         <div className="storyCopy reveal delayOne">
-          <p className="eyebrow">A slower kind of luxury</p>
-          <h2>Beauty, with a story worth telling.</h2>
-          <p>Gemora began with a simple belief: the most beautiful things should be chosen with patience. We work with trusted partners who share our respect for the natural world.</p>
-          <Link className="textLink" href="/contact">Learn about our sourcing ↗</Link>
+          <p className="eyebrow">A note on the collection</p>
+          <h2>Good stones invite a closer look.</h2>
+          <p>Gemora is a simulated gemstone storefront. This first collection is a place to explore how colour, cut and origin shape a stone—and how a product page can be useful without pretending sample details are a real appraisal.</p>
+          <Link className="textLink" href="/contact">Ask us about a stone ↗</Link>
         </div>
       </section>
 
@@ -49,7 +67,14 @@ export default function Home() {
         <div className="grid">
           {gems.slice(0, 3).map((gem) => (
             <Link className="card reveal" href={`/gems/${gem.id}`} key={gem.id}>
-              <div className={`gemImage gem${gem.id}`} role="img" aria-label={gem.name}>
+              <div className="gemImage">
+                <Image
+                  src={gem.image}
+                  alt={`${gem.name} illustrative collection photograph`}
+                  fill
+                  sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 28vw"
+                  className="editorialImage"
+                />
                 <span>View stone ↗</span>
               </div>
               <div className="cardBody">

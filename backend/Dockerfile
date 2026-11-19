@@ -1,7 +1,7 @@
 FROM node:25-alpine
 WORKDIR /app
 COPY backend/package.json ./package.json
-COPY backend/server.js backend/seed.js ./
+COPY backend/server.js backend/seed.js backend/database.js ./
 COPY data/gems.json ./data/gems.json
 RUN mkdir -p /app/database
 EXPOSE 3001
